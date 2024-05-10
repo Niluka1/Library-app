@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0829"
+    tools:context=".UpdateBookActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If you have to update book, fill this."
+        android:textColor="#00BCD4"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Title"
+        android:textColor="#00BCD4"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Enter Title"
+        android:inputType="text"
+        android:backgroundTint="#00BCD4"
+        android:textColor="#00BCD4"/>
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Author"
+        android:textColor="#00BCD4"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/authorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authorTextView"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Enter Author"
+        android:inputType="text"
+        android:backgroundTint="#00BCD4"
+        android:textColor="#00BCD4"/>
+
+    <TextView
+        android:id="@+id/isbnTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authorEditText"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="ISBN"
+        android:textColor="#00BCD4"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/isbnEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isbnTextView"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Enter ISBN"
+        android:inputType="text"
+        android:backgroundTint="#00BCD4"
+        android:textColor="#00BCD4"/>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isbnEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Update"
+        android:textColor="@color/black"
+        android:background="#00BCD4" />
+
+</RelativeLayout>
